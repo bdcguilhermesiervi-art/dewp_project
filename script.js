@@ -295,6 +295,14 @@
   if (!reduceMotion) {
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", onScroll);
+    // Native smooth scrolling (nav-dot/anchor clicks use scrollIntoView,
+    // and some browsers do the same for the sidebar's own in-page links)
+    // can coalesce "scroll" events and skip firing one at the exact final
+    // resting position, leaving scroll-driven reveals stuck mid-animation.
+    // "scrollend" fires once the browser is certain scrolling has fully
+    // stopped, so it's a safety net that re-syncs everything to the final
+    // position. Unsupported browsers just ignore the unknown event type.
+    window.addEventListener("scrollend", onScroll, { passive: true });
     updateScrollAnimations();
   }
 
