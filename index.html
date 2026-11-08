@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dewp — unlock your cyberbrain</title>
+  <meta name="description" content="dewp is the personal AI that accumulates your context over time, connecting Claude, GPT, Gemini, Grok, and other AIs into a single cyberbrain.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Fixed sidebar (unaffected by vertical scroll) -->
+  <aside class="sidebar">
+    <a href="#hero" class="sidebar-logo" aria-label="dewp — home">
+      <svg viewBox="0 0 24 32" width="20" height="27" fill="none">
+        <path d="M12 1C12 1 2.5 14.8 2.5 21.5C2.5 27.3 6.7 31 12 31C17.3 31 21.5 27.3 21.5 21.5C21.5 14.8 12 1 12 1Z"
+          fill="currentColor"/>
+      </svg>
+    </a>
+
+    <nav class="sidebar-nav" aria-label="Page sections">
+      <a href="#hero" class="nav-dot active" data-section="hero">
+        <span class="dot"></span><span class="nav-label">Home</span>
+      </a>
+      <a href="#como-funciona" class="nav-dot" data-section="como-funciona">
+        <span class="dot"></span><span class="nav-label">How it works</span>
+      </a>
+      <a href="#vantagens" class="nav-dot" data-section="vantagens">
+        <span class="dot"></span><span class="nav-label">Advantages</span>
+      </a>
+    </nav>
+
+    <div class="sidebar-spacer" aria-hidden="true"></div>
+  </aside>
+
+  <!-- Fixed buttons, top-right corner -->
+  <div class="topbar-actions">
+    <button class="btn btn-ghost" type="button">Login</button>
+    <button class="btn btn-accent" type="button">Sign in</button>
+  </div>
+
+  <!-- Scrollable content -->
+  <main class="content">
+
+    <!-- (a) HERO -->
+    <section id="hero" class="section hero-section">
+      <div class="hero-inner">
+        <h1 class="hero-title reveal">Dewp</h1>
+        <p class="hero-tagline reveal" style="--d:.1s">unlock your <span class="accent-text">cyberbrain</span></p>
+        <button class="btn btn-accent btn-lg reveal" style="--d:.2s" type="button">Sign in</button>
+      </div>
+      <div class="scroll-hint reveal" style="--d:.4s" aria-hidden="true">
+        <span class="scroll-hint-line"></span>
+        <span>scroll to discover</span>
+      </div>
+    </section>
+
+    <!-- (b) HOW IT WORKS -->
+    <section id="como-funciona" class="section how-section">
+      <!-- Full-section background (not a boxed photo — the art IS the
+           background, so it stays integrated). Cropped and faded on the
+           left from a reference supplied by the user, so it doesn't
+           conflict with the real text on top. -->
+      <div class="how-bg" id="howBg" aria-hidden="true">
+        <img src="assets/images/how-bg.jpg" class="how-bg-img" alt="">
+      </div>
+
+      <div class="how-content">
+        <div class="how-text">
+          <span class="section-kicker word-stream">How it works</span>
+          <h2 class="word-stream">A context that never gets lost</h2>
+          <p class="word-stream">
+            dewp accumulates the context you generate over time through plugins with
+            <strong>Claude</strong>, <strong>GPT</strong>, <strong>Gemini</strong>, <strong>Grok</strong>, and other AIs —
+            forming a single mega-context that follows you wherever you go.
+          </p>
+          <ul class="plugin-list reveal" style="--d:.15s" aria-label="Integrations">
+            <li>Claude</li>
+            <li>GPT</li>
+            <li>Gemini</li>
+            <li>Grok</li>
+            <li>+ more</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- (c) ADVANTAGES -->
+    <section id="vantagens" class="section advantages-section">
+      <div class="adv-grid">
+        <div class="adv-text">
+          <span class="section-kicker word-stream">Advantages</span>
+          <h2 class="word-stream">Solve it once. Remember it forever.</h2>
+
+          <div class="adv-cards">
+            <div class="adv-card card-stream">
+              <svg class="adv-icon" viewBox="0 0 24 24" width="22" height="22">
+                <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M8 12l2.5 2.5L16 9" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <h3>Solve it once, for good</h3>
+              <p>Don't solve the same problem twice — dewp already remembers what you've been through.</p>
+            </div>
+
+            <div class="adv-card card-stream">
+              <svg class="adv-icon" viewBox="0 0 24 24" width="22" height="22">
+                <path d="M12 20s-7-4.6-9.3-9A5 5 0 0112 5a5 5 0 019.3 6c-2.3 4.4-9.3 9-9.3 9z"
+                  fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+              </svg>
+              <h3>No need to re-explain your story</h3>
+              <p>In emotional conversations, dewp already understands your context — no need to tell the whole story again.</p>
+            </div>
+
+            <div class="adv-card card-stream">
+              <svg class="adv-icon" viewBox="0 0 24 24" width="22" height="22">
+                <rect x="3" y="7" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+                <line x1="3" y1="13" x2="21" y2="13" stroke="currentColor" stroke-width="1.6"/>
+              </svg>
+              <h3>Advice with your real context</h3>
+              <p>Ask for professional advice without explaining where you work or what your role is — dewp already knows.</p>
+            </div>
+
+            <div class="adv-card card-stream">
+              <svg class="adv-icon" viewBox="0 0 24 24" width="22" height="22">
+                <path d="M12 3l9 5-9 5-9-5 9-5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                <path d="M3 12l9 5 9-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                <path d="M3 16l9 5 9-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+              </svg>
+              <h3>One environment, every AI</h3>
+              <p>Use tools from different AIs inside a single integrated environment, with the same context.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="adv-chart reveal" style="--d:.1s" aria-hidden="true">
+          <div class="chart-card">
+            <span class="chart-label">performance with dewp</span>
+            <svg id="chart-svg" viewBox="0 0 420 300">
+              <defs>
+                <linearGradient id="barGradient" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#35e0c4"/>
+                  <stop offset="100%" stop-color="#8b7bff"/>
+                </linearGradient>
+              </defs>
+              <line x1="20" y1="260" x2="400" y2="260" class="chart-axis"/>
+              <g class="chart-bars">
+                <rect class="bar" data-h="110" x="40"  y="260" width="46" height="1"/>
+                <rect class="bar" data-h="170" x="134" y="260" width="46" height="1"/>
+                <rect class="bar" data-h="90"  x="228" y="260" width="46" height="1"/>
+                <rect class="bar" data-h="150" x="322" y="260" width="46" height="1"/>
+              </g>
+              <path class="trend-line" d="M63 170 L157 90 L251 150 L345 90" />
+              <text x="63"  y="282" class="chart-tick">Focus</text>
+              <text x="157" y="282" class="chart-tick">Context</text>
+              <text x="251" y="282" class="chart-tick">Time</text>
+              <text x="345" y="282" class="chart-tick">Clarity</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Floating help button (Morpheus AI) -->
+  <button class="help-fab" id="helpFab" aria-haspopup="dialog" aria-expanded="false" aria-controls="chatWidget" aria-label="Open Morpheus assistant">
+    <span class="help-fab-ping"></span>?
+  </button>
+
+  <section class="chat-widget" id="chatWidget" aria-label="Chat with the Morpheus assistant" aria-hidden="true">
+    <header class="chat-header">
+      <span class="chat-avatar">M</span>
+      <div class="chat-head-info">
+        <div class="chat-name">Morpheus</div>
+        <div class="chat-status"><span class="status-dot"></span><span>dewp assistant</span></div>
+      </div>
+      <button class="chat-close" id="chatClose" aria-label="Close chat">×</button>
+    </header>
+    <div class="chat-messages" id="chatMessages"></div>
+    <form class="chat-input-row" id="chatForm">
+      <input type="text" id="chatInput" placeholder="Type your question..." autocomplete="off" aria-label="Message to Morpheus">
+      <button type="submit" aria-label="Send message">➤</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
