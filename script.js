@@ -227,8 +227,8 @@
     makeWordLine(document.querySelector("#como-funciona .how-text .section-kicker"), 0.16),
     makeWordLine(document.querySelector("#como-funciona .how-text h2"), 0.22),
     makeWordLine(document.querySelector("#como-funciona .how-text p"), 0.3),
-    makeWordLine(document.querySelector("#vantagens .adv-text > .section-kicker"), 0.16),
-    makeWordLine(document.querySelector("#vantagens .adv-text > h2"), 0.22),
+    makeWordLine(document.querySelector("#vantagens .benefits-text > .section-kicker"), 0.16),
+    makeWordLine(document.querySelector("#vantagens .benefits-text > h2"), 0.22),
   ].filter(Boolean);
 
   // --- Advantage cards: materialize (fade + blur) one by one as you scroll ---
